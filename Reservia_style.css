@@ -1,0 +1,261 @@
+@font-face
+{
+	    font-family: 'Raleway';
+    src: url('Raleway/static/Raleway-Regular.ttf');
+}
+
+@font-face
+{
+	    font-family: 'Raleway_gras';
+    src: url('Raleway/static/Raleway-Bold.ttf');
+}
+
+
+body
+{
+	font-family: Raleway, sans-serif;
+}
+h1, h2, figcaption, strong
+{
+	font-family: Raleway_gras, sans-serif;
+}
+
+.etoile1, .etoile2, .etoile3, .etoile4, .etoile5
+{
+	color: #0065FC;
+}
+/* ----------------------------------------------------------------en tete-----------------------------------------------------------------------------------*/
+header
+{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#menu_de_recherche
+{
+	display: flex;
+	justify-content: flex-start;
+
+}
+
+.filtre
+{
+	margin-left: 50px;
+}
+
+/* ----------------------------------------------------------lien de navigation---------------------------------------------------------------------------- */
+nav
+{
+    width: auto;
+    text-align: left;
+}
+ 
+nav ul
+{
+display: flex;
+list-style-type: none;
+}
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+/*------------------------------------------------------------------section-------------------------------------------------------------------------------*/
+section
+{
+	display: flex;
+	flex-wrap: 
+	justify-content: flex-start;
+}
+
+figcaption
+{
+	font-weight: bold;
+}
+
+/*------------------------------------------------------------------article--------------------------------------------------------------------------------*/
+article
+{
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	width: 1400px;
+}
+
+#article
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.element_article
+{
+	background-color: white;
+	border-radius: 20px;
+	width: 300px;
+	height: 200px;
+}
+
+.photo_hebergement
+{
+	border-radius: 20px;
+	width: 290px;
+	height: 180px;
+	position: relative;
+	top: 5px;
+	left: 5px;
+	z-index: 1;
+	clip: rect(30px, 0px, 0px, 0px);
+}
+
+.titre_prix_note_hebergement
+{
+	background-color: white;
+	width: 292px;
+	height: 80px;
+	position: relative;
+	top: -75px;
+	left: 4px;
+	z-index: 2;
+}
+
+.prix_hebergement
+{
+	margin-top: auto;
+}
+
+.note_hebergement
+{
+	margin-top: -30px;
+}
+
+/* ---------------------------------------------------------------notation-------------------------------------------------------------------------*/
+form
+{
+  display: flex;
+}
+
+.etoile
+{
+  display: none;
+}
+
+.etoile1, .etoile2, .etoile3, .etoile4, .etoile5
+{
+	font-size: 20px;
+}
+
+form p
+{
+  font-size: 3em;
+  cursor: pointer;
+}
+
+/*-----------------------------------------------------------------aside--------------------------------------------------------------------------*/
+aside
+{
+	background-color: #F2F2F2;
+	border-radius: 15px;
+	margin-left: 30px;
+	width: 500px;
+}
+
+#aside
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.element_aside
+{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: white;
+	border-radius: 20px;
+	height: 150px;
+}
+
+.photo_aside
+{
+	width: 190px;
+	height: 140px;
+	border-radius: 20px;
+	position: relative;
+	top: 5px;
+	left: 5px;
+	z-index: 1;
+}
+
+.titre_prix_note_aside
+{
+	background-color: white;
+	width: 160px;
+	height: 145px;
+	z-index: 2;
+	position: relative;
+	left: -10px;
+	padding-left: 5px;
+}
+/*--------------------------------------------------------------activités---------------------------------------------------------------------------*/
+
+#activites_a_marseille
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.photo_activites_g
+{
+	width: 400px;
+	height: 400px;
+	clip: rect(0px, 30px, 0px, 30px);
+}
+
+.photo_activites_p
+{
+	width: 200px;
+	height: 200px;
+}
+/*--------------------------------------------*/
+.activites:nth-child(2), .activites:nth-child(3)
+{
+	flex-direction: column;
+}
+
+/*------------------------------------------------------------pied de page------------------------------------------------------------------------*/
+
+footer
+{
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.pied_de_page
+{
+	margin-left: -350px;
+}
+
+.lien_pied_de_page
+{
+	list-style-type: none;
+	margin-left: -35px;
+	line-height: 30px;
+}
+
+.lien_pied_de_page a
+{
+	text-decoration: none;
+	color: black;
+}
