@@ -20,10 +20,16 @@ h1, h2, figcaption, strong
 	font-family: Raleway_gras, sans-serif;
 }
 
-.etoile1, .etoile2, .etoile3, .etoile4, .etoile5
+.etoile_b
 {
 	color: #0065FC;
 }
+
+.etoile_g
+{
+	color: #F2F2F2;
+}
+
 /* ----------------------------------------------------------------en tete-----------------------------------------------------------------------------------*/
 header
 { 
@@ -36,12 +42,23 @@ header
 {
 	display: flex;
 	justify-content: flex-start;
+}
 
+#barre_de_recherche, #info
+{
+	display: flex;
 }
 
 .filtre
 {
 	margin-left: 50px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.icones
+{
+	color: #0065FC;
 }
 
 /* ----------------------------------------------------------lien de navigation---------------------------------------------------------------------------- */
@@ -53,8 +70,8 @@ nav
  
 nav ul
 {
-display: flex;
-list-style-type: none;
+	display: flex;
+	list-style-type: none;
 }
 nav li
 {
@@ -72,7 +89,7 @@ nav a
 section
 {
 	display: flex;
-	flex-wrap: 
+	flex-wrap: wrap;
 	justify-content: flex-start;
 }
 
@@ -86,29 +103,31 @@ article
 {
 	background-color: #F2F2F2;
 	border-radius: 20px;
-	width: 1400px;
+	/*width: 1400px;*/
+	flex: 3;
 }
 
 #article
 {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: flex-start;
+	margin-left: 50px;
 }
 
 .element_article
 {
 	background-color: white;
 	border-radius: 20px;
-	width: 300px;
-	height: 200px;
+	width: 350px;
+	height: 250px;
 }
 
 .photo_hebergement
 {
 	border-radius: 20px;
-	width: 290px;
-	height: 180px;
+	width: 340px;
+	height: 235px;
 	position: relative;
 	top: 5px;
 	left: 5px;
@@ -119,10 +138,10 @@ article
 .titre_prix_note_hebergement
 {
 	background-color: white;
-	width: 292px;
-	height: 80px;
+	width: 342px;
+	height: 90px;
 	position: relative;
-	top: -75px;
+	top: -88px;
 	left: 4px;
 	z-index: 2;
 }
@@ -148,7 +167,7 @@ form
   display: none;
 }
 
-.etoile1, .etoile2, .etoile3, .etoile4, .etoile5
+.etoile_b, .etoile_g
 {
 	font-size: 20px;
 }
@@ -165,7 +184,8 @@ aside
 	background-color: #F2F2F2;
 	border-radius: 15px;
 	margin-left: 30px;
-	width: 500px;
+	/*width: 500px;*/
+	flex: 1;
 }
 
 #aside
@@ -212,24 +232,63 @@ aside
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
+	justify-content: flex-start;
+	margin-left: -40px;
+
+}
+
+.activites
+{
+	border-radius: 20px;
+	box-shadow: 3px 3px 10px #F2F2F2;
+	margin-right: -10px;
 }
 
 .photo_activites_g
 {
-	width: 400px;
-	height: 400px;
-	clip: rect(0px, 30px, 0px, 30px);
+	width: 520px;
+	height: 490px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
 }
 
 .photo_activites_p
 {
-	width: 200px;
-	height: 200px;
+	width: 370px;
+	height: 240px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
 }
-/*--------------------------------------------*/
-.activites:nth-child(2), .activites:nth-child(3)
+
+.photo_activites_p_1
 {
+	width: 370px;
+	height: 290px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.photo_activites_p_2
+{
+	width: 370px;
+	height: 190px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.pack_activites
+{
+	display: flex;
 	flex-direction: column;
+}
+
+.titre_activites_p
+{
+	position: relative;
+	top: -20px;
+	background-color: white;
+	height: 10px;
+	padding-top: 10px
 }
 
 /*------------------------------------------------------------pied de page------------------------------------------------------------------------*/
@@ -237,8 +296,7 @@ aside
 footer
 {
 	background-color: #F2F2F2;
-	border-radius: 20px;
-	display: flex;
+	display:flex;
 	justify-content: space-around;
 }
 
