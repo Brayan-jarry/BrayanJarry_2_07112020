@@ -20,22 +20,64 @@ h1, h2, figcaption, strong
 	font-family: Raleway_gras, sans-serif;
 }
 
-.etoile_b
-{
-	color: #0065FC;
-}
-
-.etoile_g
-{
-	color: #F2F2F2;
-}
-
-/* ----------------------------------------------------------------en tete-----------------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------en tete------------------------------------------------------------------------------------------------*/
 header
 { 
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+}
+
+#logo
+{
+	width: 12em;
+	height: 6em;
+}
+
+.lien_principaux
+{
+	color: black;
+}
+
+.lien_principaux:hover
+{
+	color: #0065FC;
+	text-decoration: underline;
+}
+
+#barre_de_recherche, #info
+{
+	display: flex;
+}
+
+.icones_recherche
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	background-color: #F2F2F2;
+	width: 2.2em;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+#zone_recherche
+{
+	border:1px solid  #F2F2F2;
+}
+
+label
+{
+	color: white;
+	background-color: #0065FC;
+	height: 2em;
+	width: 8em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 #menu_de_recherche
@@ -44,24 +86,52 @@ header
 	justify-content: flex-start;
 }
 
-#barre_de_recherche, #info
-{
-	display: flex;
-}
-
 .filtre
 {
 	margin-left: 50px;
 	display: flex;
 	justify-content: flex-start;
+	margin-top: 1.2em;
+	border:3px solid #F2F2F2;
+	border-radius: 20px;
+	height: 1.45em;
+	padding-top: 0.2em;
+	padding-right: 1em;
 }
 
-.icones
+.icones_filtre, .icones_info
 {
 	color: #0065FC;
+	margin-right: 1em;
+	
 }
 
-/* ----------------------------------------------------------lien de navigation---------------------------------------------------------------------------- */
+.icones_filtre
+{
+	width: 30px;
+	height: 30px;
+	border-radius: 360px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #DEEBFF;
+	margin-top: -0.3em;
+	margin-left: -0.2em;
+}
+
+.icones_info
+{
+	width: 20px;
+	height: 20px;
+	border:3px solid #F2F2F2;
+	border-radius: 360px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -0.2em;
+}
+
+/* ------------------------------------------------------------------------------------lien de navigation------------------------------------------------------------------------------------ */
 nav
 {
     width: auto;
@@ -85,7 +155,7 @@ nav a
     text-decoration: none;
 }
 
-/*------------------------------------------------------------------section-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------section------------------------------------------------------------------------------------------*/
 section
 {
 	display: flex;
@@ -98,7 +168,7 @@ figcaption
 	font-weight: bold;
 }
 
-/*------------------------------------------------------------------article--------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------article--------------------------------------------------------------------------------------------*/
 article
 {
 	background-color: #F2F2F2;
@@ -123,27 +193,15 @@ article
 	height: 250px;
 }
 
-.photo_hebergement
-{
-	border-radius: 20px;
-	width: 340px;
-	height: 235px;
-	position: relative;
-	top: 5px;
-	left: 5px;
-	z-index: 1;
-	clip: rect(30px, 0px, 0px, 0px);
-}
-
 .titre_prix_note_hebergement
 {
 	background-color: white;
-	width: 342px;
-	height: 90px;
-	position: relative;
-	top: -88px;
-	left: 4px;
-	z-index: 2;
+	position:relative;
+	top: 9.7em;
+	right: -1px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	padding-left: 1em;
 }
 
 .prix_hebergement
@@ -156,7 +214,51 @@ article
 	margin-top: -30px;
 }
 
-/* ---------------------------------------------------------------notation-------------------------------------------------------------------------*/
+/*-----------------------photo hebergement------------------*/
+
+#photo_hebergement_1
+{
+	background-image: url("Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+}
+
+#photo_hebergement_2
+{
+	background-image:url("Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+}
+
+#photo_hebergement_3
+{
+	background-image:url("Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+}
+
+#photo_hebergement_4
+{
+	background-image:url("Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+}
+
+#photo_hebergement_5
+{
+	background-image:url("Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+}
+
+#photo_hebergement_6
+{
+	background-image:url("Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+}
+
+#photo_hebergement_1 ,#photo_hebergement_2 ,#photo_hebergement_3 ,#photo_hebergement_4 ,#photo_hebergement_5 ,#photo_hebergement_6
+{
+	border-radius: 20px;
+	width: 345px;
+	height: 245px;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: 5px 5px;
+	background-size: 345px 245px;
+	background-clip: content-box;
+}
+
+/* ------------------------------------------------------------------------------------notation--------------------------------------------------------------------------------------*/
 form
 {
   display: flex;
@@ -172,13 +274,23 @@ form
 	font-size: 20px;
 }
 
+.etoile_b
+{
+	color: #0065FC;
+}
+
+.etoile_g
+{
+	color: #F2F2F2;
+}
+
 form p
 {
   font-size: 3em;
   cursor: pointer;
 }
 
-/*-----------------------------------------------------------------aside--------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------aside-----------------------------------------------------------------------------------------------------*/
 aside
 {
 	background-color: #F2F2F2;
@@ -225,7 +337,7 @@ aside
 	left: -10px;
 	padding-left: 5px;
 }
-/*--------------------------------------------------------------activités---------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------activités-----------------------------------------------------------------------------------*/
 
 #activites_a_marseille
 {
@@ -291,7 +403,7 @@ aside
 	padding-top: 10px
 }
 
-/*------------------------------------------------------------pied de page------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------pied de page------------------------------------------------------------------------------------------*/
 
 footer
 {

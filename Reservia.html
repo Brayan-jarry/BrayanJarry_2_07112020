@@ -8,18 +8,18 @@
     </head>
 <body>
 
-		<header> 
+	<header> 
 
-		<div id="logo">
-			<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/logo/Reservia@3x.png" alt="Logo Reservia" />
+		<div >
+			<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/logo/Reservia@3x.png" alt="Logo Reservia" id="logo" />
 		</div>
 
 		<div id="menu_onglet">
 			<nav>
 				<ul>
-					<li><a href="">Hebergement</a></li>
-					<li><a href="">Activités</a></li>
-					<li><a href="">S'inscrire</a></li>
+					<li><a href="#article" class="lien_principaux">Hebergement</a></li>
+					<li><a href="#activites_a_marseille" class="lien_principaux">Activités</a></li>
+					<li><a href="" class="lien_principaux">S'inscrire</a></li>
 				</ul>
 			</nav>
 		</div>	
@@ -32,252 +32,268 @@
 		<p>En plein centre ville ou en pleine nature</p>
 
 		<div id="barre_de_recherche">
-			<div class="icones">
+			<div class="icones_recherche">
 				<i class="fas fa-map-marker-alt"></i>
 			</div>
-			<input type="text" name="recherche" /><label>Recherche</label>
+			<input type="text" name="recherche" placeholder="Marseille, France" id="zone_recherche" /><label>Rechercher</label>
 		</div>
 
-<div id="menu_de_recherche">
+		<div id="menu_de_recherche">
 		
 				<h2>Filtres</h2>
 				<div class="filtre">
-					<div class="icones">
+					<p>
+						<div class="icones_filtre">
 						<i class="fas fa-money-bill-wave-alt"></i>
 					</div>
-					<p>Economique</p>	
+					<strong>Economique</strong>
+					</p>	
 				</div>
 
 				<div class="filtre">
-					<div class="icones">
+					<p>
+						<div class="icones_filtre">
 						<i class="fas fa-child"></i>
 					</div>
-					<p>Familial</p>
+					<strong>Familial</strong>
+					</p>
 				</div>
 
 				<div class="filtre">
-					<div class="icones">
+					<p>
+						<div class="icones_filtre">
 						<i class="fas fa-heart"></i>
 					</div>
-					<p>Romantique</p>
+					<strong>Romantique</strong>
+					</p>
 				</div>
 
 				<div class="filtre">
-					<div class="icones">
+					<p>
+						<div class="icones_filtre">
 						<i class="fas fa-dog"></i>
 					</div>
-					<p>Animaux autorisés</p>
+					<strong>Animaux autorisés</strong>
+					</p>
 				</div>		
 		
-	</div>
-
-	<div id="info">
-		<div class="icones">
-			<i class="fas fa-info"></i>
-		</div>
-			<p>Plus que 500 logements sont disponibles dans cette ville</p>
 		</div>
 
-	<section>
-
-		<article>
-
-			<h1>Hébergements à Marseille</h1>
-
-			<div id="article">
-
-				<figure class="element_article">
-					<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo du lieu" class="photo_hebergement"/>
-					<div class="titre_prix_note_hebergement">
-						<figcaption>Auberge la Cannebière</figcaption>
-						<p class="prix_hebergement">Nuit à partir de <strong>25€</strong></p>
-						<form method="post" action="#" class="note_hebergement">
-		  					<input type="radio" name="note" class="etoile" checked> <p class="etoile_b">★</p></input>
-		 					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-		  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-		  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-		  					<input type="radio" name="note" class="etoile"> <p class="etoile_g">★</p> </input>
-						</form>
-					</div>
-				</figure>
-
-				<figure class="element_article">
-					<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="photo du lieu" class="photo_hebergement"/>
-					<div class="titre_prix_note_hebergement">
-						<figcaption>Hôtel du port</figcaption>
-						<p class="prix_hebergement">Nuit à partir de 52<strong>€</strong></p>
-						<form method="post" action="#" class="note_hebergement">
-		  					<input type="radio" name="note" class="etoile" checked> <p class="etoile_b">★</p></input>
-		 					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-		  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-		  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-		  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-						</form>
-					</div>
-				</figure>
-
-				<figure class="element_article">
-					<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="photo du lieu" class="photo_hebergement"/>
-					<div class="titre_prix_note_hebergement">
-						<figcaption>Hôtel les mouettes</figcaption>
-						<p class="prix_hebergement">Nuit à partir de 76<strong>€</strong></p>
-						<form method="post" action="#" class="note_hebergement">
-		  					<input type="radio" name="note" class="etoile" checked> <p class="etoile_b">★</p></input>
-		 					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-		  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-		  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-		  					<input type="radio" name="note" class="etoile"> <p class="etoile_g">★</p> </input>
-						</form>
-					</div>
-				</figure>
-
-				<figure class="element_article">
-					<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="photo du lieu" class="photo_hebergement"/>
-					<div class="titre_prix_note_hebergement">
-						<figcaption>Hôtel de la mer</figcaption>
-						<p class="prix_hebergement">Nuit à partir de 46<strong>€</strong></p>
-						<form method="post" action="#" class="note_hebergement">
-		  					<input type="radio" name="note" class="etoile" checked> <p class="etoile_b">★</p></input>
-		 					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-		  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-		  					<input type="radio" name="note" class="etoile"> <p class="etoile_g">★</p> </input>
-		  					<input type="radio" name="note" class="etoile"> <p class="etoile_g">★</p> </input>
-						</form>
-					</div>
-				</figure>
-
-				<figure class="element_article">
-					<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="photo du lieu" class="photo_hebergement"/>
-					<div class="titre_prix_note_hebergement">
-						<figcaption>Auberge le panier</figcaption>
-						<p class="prix_hebergement">Nuit à partir de <strong>23€</strong></p>
-						<form method="post" action="#" class="note_hebergement">
-		  					<input type="radio" name="note" class="etoile" checked> <p class="etoile_b">★</p></input>
-		 					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-		  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-		  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-		  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-						</form>
-					</div>
-				</figure>
-
-				<figure class="element_article">
-					<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="photo du lieu" class="photo_hebergement"/>
-					<div class="titre_prix_note_hebergement">
-						<figcaption>Hôtel chez Amina</figcaption>
-						<p class="prix_hebergement">Nuit à partir de 96<strong>€</strong></p>
-						<form method="post" action="#" class="note_hebergement">
-		  					<input type="radio" name="note" class="etoile" checked> <p class="etoile_b">★</p></input>
-		 					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-		  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-		  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-		  					<input type="radio" name="note" class="etoile"> <p class="etoile_g">★</p> </input>
-						</form>
-					</div>
-				</figure>
-
-			</div>
-
-		</article>
-
-		<aside>
-
-			<h1>Les plus populaires</h1>
-
-			<div id="aside">
-
-				<figure class="element_aside">
-					<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/rogner/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo du lieu" class="photo_aside"/>
-					<div class="titre_prix_note_aside">
-						<figcaption>Hôtel le soleil du matin</figcaption>
-						<p>Nuit à partir de 128€</p>
-						<form method="post" action="#">
-		  					<input type="radio" name="note" class="etoile" checked> <p class="etoile_b">★</p></input>
-		 					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-		  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-		  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-		  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-						</form>
-					</div>
-				</figure>
-
-				<figure class="element_aside">
-					<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="photo du lieu" class="photo_aside"/>
-					<div class="titre_prix_note_aside">
-						<figcaption>Au coeur de l'eau chambres d'hôtes</figcaption>
-						<p>Nuit à partir de 71€</p>
-						<form method="post" action="#">
-		  					<input type="radio" name="note" class="etoile" checked> <p class="etoile_b">★</p></input>
-		 					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-		  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-		  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-		  					<input type="radio" name="note" class="etoile"> <p class="etoile_g">★</p> </input>
-						</form>
-					</div>
-				</figure>
-
-				<figure class="element_aside">
-					<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="photo du lieu" class="photo_aside"/>
-					<div class="titre_prix_note_aside">
-						<figcaption>Hôtel tout bleu et Blanc</figcaption>
-						<p>Nuit à partir de 68€</p>
-						<form method="post" action="#">
-		  					<input type="radio" name="note" class="etoile" checked> <p class="etoile_b">★</p></input>
-		 					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-		  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-		  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-		  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-						</form>
-					</div>
-				</figure>
-
-			</div>
-
-		</aside>	
-
-	</section>
-
-		<h1>Activités à Marseille</h1>
-
-		<div id="activites_a_marseille">
-
-			<figure class="activites">
-				<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo du lieu" class="photo_activites_g"/>
-				<figcaption>Vieux Port</figcaption>
-			</figure> 
-
-			<div class="pack_activites">
-				<figure class="activites">
-					<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo du lieu" class="photo_activites_p_1"/>
-					<figcaption class="titre_activites_p">Fort de Paumègues</figcaption>
-				</figure> 
-
-				<figure class="activites">
-					<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="photo du lieu" class="photo_activites_p_2"/>
-					<figcaption class="titre_activites_p">Îles du Frioul</figcaption>
-				</figure> 
-			</div>
-
-			<figure class="activites">
-				<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="photo du lieu" class="photo_activites_g"/>
-				<figcaption>Parc National des Calanques</figcaption>
-			</figure>
-
-			<div class="pack_activites">
-				<figure class="activites">
-					<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="photo du lieu" class="photo_activites_p"/>
-					<figcaption class="titre_activites_p">Notre-Dames-de-la-Garde</figcaption>
-				</figure> 
-
-				<figure class="activites">
-					<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="photo du lieu" class="photo_activites_p"/>
-					<figcaption class="titre_activites_p">Parc Longchamp</figcaption>
-				</figure> 
-			</div>
-
+		<div id="info">
+			<p>
+				<div class="icones_info">
+					<i class="fas fa-info"></i>
+				</div>
+				Plus que 500 logements sont disponibles dans cette ville
+			</p>
 		</div>
 
-</main>
+		<section>
+
+			<article>
+
+				<h1>Hébergements à Marseille</h1>
+
+				<div id="article">
+
+					<figure class="element_article">
+						<div id="photo_hebergement_1">
+							<div class="titre_prix_note_hebergement">
+								<figcaption>Auberge la Cannebière</figcaption>
+								<p class="prix_hebergement">Nuit à partir de <strong>25€</strong></p>
+								<form method="post" action="#" class="note_hebergement">
+				  					<input type="radio" name="note" class="etoile" checked> <p class="etoile_b">★</p></input>
+				 					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+				  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+				  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+				  					<input type="radio" name="note" class="etoile"> <p class="etoile_g">★</p> </input>
+								</form>
+							</div>
+						</div>
+					</figure>
+
+					<figure class="element_article">
+						<div id="photo_hebergement_2">
+							<div class="titre_prix_note_hebergement">
+								<figcaption>Hôtel du port</figcaption>
+								<p class="prix_hebergement">Nuit à partir de 52<strong>€</strong></p>
+								<form method="post" action="#" class="note_hebergement">
+				  					<input type="radio" name="note" class="etoile" checked> <p class="etoile_b">★</p></input>
+				 					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+				  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+				  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+				  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+								</form>
+							</div>
+						</div>
+					</figure>
+
+					<figure class="element_article">
+						<div id="photo_hebergement_3">
+							<div class="titre_prix_note_hebergement">
+								<figcaption>Hôtel les mouettes</figcaption>
+								<p class="prix_hebergement">Nuit à partir de 76<strong>€</strong></p>
+								<form method="post" action="#" class="note_hebergement">
+				  					<input type="radio" name="note" class="etoile" checked> <p class="etoile_b">★</p></input>
+				 					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+				  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+				  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+				  					<input type="radio" name="note" class="etoile"> <p class="etoile_g">★</p> </input>
+								</form>
+							</div>
+						</div>
+					</figure>
+
+					<figure class="element_article">
+						<div id="photo_hebergement_4">
+							<div class="titre_prix_note_hebergement">
+								<figcaption>Hôtel de la mer</figcaption>
+								<p class="prix_hebergement">Nuit à partir de 46<strong>€</strong></p>
+								<form method="post" action="#" class="note_hebergement">
+				  					<input type="radio" name="note" class="etoile" checked> <p class="etoile_b">★</p></input>
+				 					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+				  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+				  					<input type="radio" name="note" class="etoile"> <p class="etoile_g">★</p> </input>
+				  					<input type="radio" name="note" class="etoile"> <p class="etoile_g">★</p> </input>
+								</form>
+							</div>
+						</div>
+					</figure>
+
+					<figure class="element_article">
+						<div id="photo_hebergement_5">
+							<div class="titre_prix_note_hebergement">
+								<figcaption>Auberge le panier</figcaption>
+								<p class="prix_hebergement">Nuit à partir de <strong>23€</strong></p>
+								<form method="post" action="#" class="note_hebergement">
+				  					<input type="radio" name="note" class="etoile" checked> <p class="etoile_b">★</p></input>
+				 					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+				  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+				  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+				  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+								</form>
+							</div>
+						</div>
+					</figure>
+
+					<figure class="element_article">
+						<div id="photo_hebergement_6">
+							<div class="titre_prix_note_hebergement">
+								<figcaption>Hôtel chez Amina</figcaption>
+								<p class="prix_hebergement">Nuit à partir de 96<strong>€</strong></p>
+								<form method="post" action="#" class="note_hebergement">
+				  					<input type="radio" name="note" class="etoile" checked> <p class="etoile_b">★</p></input>
+				 					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+				  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+				  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+				  					<input type="radio" name="note" class="etoile"> <p class="etoile_g">★</p> </input>
+								</form>
+							</div>
+						</div>
+					</figure>
+
+				</div>
+
+			</article>
+
+			<aside>
+
+				<h1>Les plus populaires</h1>
+
+				<div id="aside">
+
+					<figure class="element_aside">
+						<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/rogner/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo du lieu" class="photo_aside"/>
+						<div class="titre_prix_note_aside">
+							<figcaption>Hôtel le soleil du matin</figcaption>
+							<p>Nuit à partir de 128€</p>
+							<form method="post" action="#">
+			  					<input type="radio" name="note" class="etoile" checked> <p class="etoile_b">★</p></input>
+			 					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+			  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+			  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+			  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+							</form>
+						</div>
+					</figure>
+
+					<figure class="element_aside">
+						<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="photo du lieu" class="photo_aside"/>
+						<div class="titre_prix_note_aside">
+							<figcaption>Au coeur de l'eau chambres d'hôtes</figcaption>
+							<p>Nuit à partir de 71€</p>
+							<form method="post" action="#">
+			  					<input type="radio" name="note" class="etoile" checked> <p class="etoile_b">★</p></input>
+			 					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+			  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+			  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+			  					<input type="radio" name="note" class="etoile"> <p class="etoile_g">★</p> </input>
+							</form>
+						</div>
+					</figure>
+
+					<figure class="element_aside">
+						<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="photo du lieu" class="photo_aside"/>
+						<div class="titre_prix_note_aside">
+							<figcaption>Hôtel tout bleu et Blanc</figcaption>
+							<p>Nuit à partir de 68€</p>
+							<form method="post" action="#">
+			  					<input type="radio" name="note" class="etoile" checked> <p class="etoile_b">★</p></input>
+			 					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+			  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+			  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+			  					<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
+							</form>
+						</div>
+					</figure>
+
+				</div>
+
+			</aside>	
+
+		</section>
+
+			<h1>Activités à Marseille</h1>
+
+			<div id="activites_a_marseille">
+
+				<figure class="activites">
+					<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo du lieu" class="photo_activites_g"/>
+					<figcaption>Vieux Port</figcaption>
+				</figure> 
+
+				<div class="pack_activites">
+					<figure class="activites">
+						<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo du lieu" class="photo_activites_p_1"/>
+						<figcaption class="titre_activites_p">Fort de Paumègues</figcaption>
+					</figure> 
+
+					<figure class="activites">
+						<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="photo du lieu" class="photo_activites_p_2"/>
+						<figcaption class="titre_activites_p">Îles du Frioul</figcaption>
+					</figure> 
+				</div>
+
+				<figure class="activites">
+					<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="photo du lieu" class="photo_activites_g"/>
+					<figcaption>Parc National des Calanques</figcaption>
+				</figure>
+
+				<div class="pack_activites">
+					<figure class="activites">
+						<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="photo du lieu" class="photo_activites_p"/>
+						<figcaption class="titre_activites_p">Notre-Dames-de-la-Garde</figcaption>
+					</figure> 
+
+					<figure class="activites">
+						<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="photo du lieu" class="photo_activites_p"/>
+						<figcaption class="titre_activites_p">Parc Longchamp</figcaption>
+					</figure> 
+				</div>
+
+			</div>
+
+	</main>
 
 	<footer>
 
