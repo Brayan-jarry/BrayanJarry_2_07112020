@@ -20,6 +20,16 @@ h1, h2, figcaption, strong
 	font-family: Raleway_gras, sans-serif;
 }
 
+h1
+{
+	font-size: 24px;
+}
+
+h2
+{
+	font-size:20px;
+}
+
 /* --------------------------------------------------------------------------------------en tete------------------------------------------------------------------------------------------------*/
 header
 { 
@@ -39,7 +49,12 @@ header
 	color: black;
 }
 
-.lien_principaux:hover
+.lien_inscription
+{
+	color: #0065FC;
+}
+
+.lien_principaux:hover, .lien_inscription:hover
 {
 	color: #0065FC;
 	text-decoration: underline;
@@ -65,6 +80,12 @@ header
 #zone_recherche
 {
 	border:1px solid  #F2F2F2;
+}
+
+#zone_recherche::placeholder
+{
+	color: black;
+	font-family: Raleway_gras, sans-serif;
 }
 
 label
@@ -185,6 +206,16 @@ article
 	margin-left: 50px;
 }
 
+#titre_div_hebergement
+{
+	margin-left: 95px;
+}
+
+#Afficher_plus
+{
+	margin-left: 35px;
+}
+
 .element_article
 {
 	background-color: white;
@@ -198,7 +229,6 @@ article
 	background-color: white;
 	position:relative;
 	top: 9.7em;
-	right: -1px;
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
 	padding-left: 1em;
@@ -249,13 +279,16 @@ article
 #photo_hebergement_1 ,#photo_hebergement_2 ,#photo_hebergement_3 ,#photo_hebergement_4 ,#photo_hebergement_5 ,#photo_hebergement_6
 {
 	border-radius: 20px;
-	width: 345px;
+	width: 340px;
 	height: 245px;
+	background-size: 340px 245px;
 	background-attachment: scroll;
 	background-repeat: no-repeat;
-	background-position: 5px 5px;
-	background-size: 345px 245px;
+	background-position: center;
 	background-clip: content-box;
+	position: relative;
+	top:5px;
+	left: 5px;
 }
 
 /* ------------------------------------------------------------------------------------notation--------------------------------------------------------------------------------------*/
@@ -307,36 +340,80 @@ aside
 	justify-content: flex-start;
 }
 
+#titre_div_aside
+{
+	margin-left: 45px;
+}
+
+
+#titre_et_icone_aside
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+#icone_aside
+{
+	position: relative;
+	top: 25px;
+	left: 140px;
+	font-size: 1.5em;
+}
+
 .element_aside
 {
 	display: flex;
 	flex-wrap: wrap;
 	background-color: white;
 	border-radius: 20px;
-	height: 150px;
-}
-
-.photo_aside
-{
-	width: 190px;
-	height: 140px;
-	border-radius: 20px;
-	position: relative;
-	top: 5px;
-	left: 5px;
-	z-index: 1;
+	height: 170px;
 }
 
 .titre_prix_note_aside
 {
 	background-color: white;
-	width: 160px;
+	width: 170px;
 	height: 145px;
-	z-index: 2;
+	padding-left: 20px;
+	padding-top: 15px;
 	position: relative;
-	left: -10px;
-	padding-left: 5px;
+	left: 160px;
 }
+
+/*---------------------photo aside------------------------*/
+
+#photo_aside_1
+{
+	background-image:url('Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
+}
+
+#photo_aside_2
+{
+	background-image:url('Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg');
+}
+
+#photo_aside_3
+{
+	background-image:url('Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
+}
+
+#photo_aside_1 ,#photo_aside_2 ,#photo_aside_3
+{
+	border-radius: 20px;
+	width: 180px;
+	height: 160px;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 180px 160px;
+	background-clip: content-box;
+	position: relative;
+	top: 5px;
+	left: 5px;
+
+}
+
 /*------------------------------------------------------------------------------------activités-----------------------------------------------------------------------------------*/
 
 #activites_a_marseille
@@ -352,40 +429,8 @@ aside
 .activites
 {
 	border-radius: 20px;
-	box-shadow: 3px 3px 10px #F2F2F2;
+	box-shadow: 6px 6px 10px #F2F2F2;
 	margin-right: -10px;
-}
-
-.photo_activites_g
-{
-	width: 520px;
-	height: 490px;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
-}
-
-.photo_activites_p
-{
-	width: 370px;
-	height: 240px;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
-}
-
-.photo_activites_p_1
-{
-	width: 370px;
-	height: 290px;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
-}
-
-.photo_activites_p_2
-{
-	width: 370px;
-	height: 190px;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
 }
 
 .pack_activites
@@ -397,10 +442,99 @@ aside
 .titre_activites_p
 {
 	position: relative;
-	top: -20px;
+	top: -20px; 
 	background-color: white;
 	height: 10px;
-	padding-top: 10px
+	padding-top: 10px;
+}
+
+.titre_activites_g
+{
+	padding-top: 10px;
+}
+
+/*--------------------photo activites-----------*/
+
+#photo_activites_1
+{
+	background-image: url("Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+}
+
+#photo_activites_2
+{
+	background-image: url("Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+}
+
+#photo_activites_3
+{
+	background-image: url("Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+}
+
+#photo_activites_4
+{
+	background-image: url("Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+}
+
+#photo_activites_5
+{
+	background-image: url("Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+}
+
+#photo_activites_6
+{
+	background-image: url("Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+}
+
+#photo_activites_1, #photo_activites_4
+{
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	width: 500px;
+	height: 500px;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 500px 500px;
+	background-clip: content-box;
+}
+
+#photo_activites_5, #photo_activites_6
+{
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	width: 400px;
+	height: 245px;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 400px 245px;
+	background-clip: content-box;
+}
+
+#photo_activites_2
+{
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	width: 400px;
+	height: 290px;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 400px 290px;
+	background-clip: content-box;
+}
+
+#photo_activites_3
+{
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	width: 400px;
+	height: 200px;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 400px 200px;
+	background-clip: content-box;
 }
 
 /*---------------------------------------------------------------------------------pied de page------------------------------------------------------------------------------------------*/
