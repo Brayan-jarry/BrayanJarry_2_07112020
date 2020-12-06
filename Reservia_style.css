@@ -31,6 +31,8 @@ h2
 }
 
 /* --------------------------------------------------------------------------------------en tete------------------------------------------------------------------------------------------------*/
+
+
 header
 { 
     display: flex;
@@ -107,7 +109,7 @@ label
 	justify-content: flex-start;
 }
 
-.filtre
+.filtre1, .filtre2, .filtre3, .filtre4
 {
 	margin-left: 50px;
 	display: flex;
@@ -150,6 +152,7 @@ label
 	justify-content: center;
 	align-items: center;
 	margin-top: -0.2em;
+	font-size: 0.75em;
 }
 
 /* ------------------------------------------------------------------------------------lien de navigation------------------------------------------------------------------------------------ */
@@ -194,7 +197,6 @@ article
 {
 	background-color: #F2F2F2;
 	border-radius: 20px;
-	/*width: 1400px;*/
 	flex: 3;
 }
 
@@ -278,10 +280,10 @@ article
 
 #photo_hebergement_1 ,#photo_hebergement_2 ,#photo_hebergement_3 ,#photo_hebergement_4 ,#photo_hebergement_5 ,#photo_hebergement_6
 {
-	border-radius: 20px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
 	width: 340px;
-	height: 245px;
-	background-size: 340px 245px;
+	height: 165px;
 	background-attachment: scroll;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -289,6 +291,7 @@ article
 	position: relative;
 	top:5px;
 	left: 5px;
+	background-size: cover;
 }
 
 /* ------------------------------------------------------------------------------------notation--------------------------------------------------------------------------------------*/
@@ -400,13 +403,14 @@ aside
 
 #photo_aside_1 ,#photo_aside_2 ,#photo_aside_3
 {
-	border-radius: 20px;
-	width: 180px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	width: 170px;
 	height: 160px;
 	background-attachment: scroll;
 	background-repeat: no-repeat;
 	background-position: left;
-	background-size: 180px 160px;
+	background-size: cover;
 	background-clip: content-box;
 	position: relative;
 	top: 5px;
@@ -423,14 +427,27 @@ aside
 	flex-direction: row;
 	justify-content: flex-start;
 	margin-left: -40px;
+	height: 600px;
 
 }
 
-.activites
+.activites_g, .activites_p, .activites_p1, .activites_p2
 {
 	border-radius: 20px;
 	box-shadow: 6px 6px 10px #F2F2F2;
 	margin-right: -10px;
+}
+
+.activites_g
+{
+	height: 95%;
+	width: 450px;
+}
+
+.activites_p
+{
+	height: 45%;
+	width: 450px;
 }
 
 .pack_activites
@@ -439,16 +456,19 @@ aside
 	flex-direction: column;
 }
 
-.titre_activites_p
+.activites_p1
 {
-	position: relative;
-	top: -20px; 
-	background-color: white;
-	height: 10px;
-	padding-top: 10px;
+	height: 55%;
+	width: 450px;
 }
 
-.titre_activites_g
+.activites_p2
+{
+	height: 35%;
+	width: 450px;
+}
+
+.titre_activites_g, .titre_activites_p
 {
 	padding-top: 10px;
 }
@@ -489,12 +509,12 @@ aside
 {
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
-	width: 500px;
-	height: 500px;
+	width: 100%;
+	height: 90%;
 	background-attachment: scroll;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 500px 500px;
+	background-size: cover;
 	background-clip: content-box;
 }
 
@@ -502,12 +522,12 @@ aside
 {
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
-	width: 400px;
-	height: 245px;
+	width: 100%;
+	height: 80%;
 	background-attachment: scroll;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 400px 245px;
+	background-size: cover;
 	background-clip: content-box;
 }
 
@@ -515,12 +535,12 @@ aside
 {
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
-	width: 400px;
-	height: 290px;
+	width: 100%;
+	height: 82%;
 	background-attachment: scroll;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 400px 290px;
+	background-size: cover;
 	background-clip: content-box;
 }
 
@@ -528,12 +548,12 @@ aside
 {
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
-	width: 400px;
-	height: 200px;
+	width: 100%;
+	height: 73%;
 	background-attachment: scroll;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 400px 200px;
+	background-size: cover;
 	background-clip: content-box;
 }
 
@@ -562,4 +582,70 @@ footer
 {
 	text-decoration: none;
 	color: black;
+}
+
+/*------------------------------------------------------------------------------Media Queries--------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width : 800px)
+{
+
+	main
+	{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	section
+	{
+		width: auto;
+		display: flex;
+		flex-direction: column-reverse;
+		flex-wrap: wrap;
+	}
+
+	#menu_de_recherche
+	{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+
+	.filtre
+	{
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	article
+	{
+		background-color: white;
+	}
+
+	.element_article
+	{
+		box-shadow: 10px 10px 10px #F2F2F2, -10px -10px 10px #F2F2F2;
+
+	}
+
+	#activites_a_marseille
+	{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.activites
+	{
+		width: 345px;
+	}
+
+	#photo_activites_1, #photo_activites_2, #photo_activites_3, #photo_activites_4, #photo_activites_5, #photo_activites_6
+	{
+		width: 345px;
+		height: 200px;
+	}
 }
