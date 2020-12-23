@@ -11,15 +11,17 @@
 
 	<header> 
 
-		<div >
-			<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/logo/Reservia@3x.png" alt="Logo Reservia" id="logo" />
+		<div id="div_logo">
+			<img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/logo/Reservia@3x.png" alt="Logo Reservia" id="logo"/>
 		</div>
 
 		<div id="menu_onglet">
 			<nav>
 				<ul>
-					<li><a href="#titre_div_hebergement" class="lien_principaux">Hebergement</a></li>
-					<li><a href="#activites_a_marseille" class="lien_principaux">Activités</a></li>
+					<div id="pack_lien_pricipaux">
+						<div><li><a href="#titre_div_hebergement" class="lien_principaux">Hebergement</a></li></div>
+						<div><li><a href="#activites_a_marseille" class="lien_principaux">Activités</a></li></div>
+					</div>
 					<li><a href="" class="lien_inscription"><strong>S'inscrire</strong></a></li>
 				</ul>
 			</nav>
@@ -41,7 +43,9 @@
 
 		<div id="menu_de_recherche">
 		
-				<h2>Filtres</h2>
+			<h2>Filtres</h2>
+
+			<div id="pack_filtre">
 				<div class="filtre1">
 					<p>
 						<div class="icones_filtre">
@@ -59,24 +63,25 @@
 					<strong>Familial</strong>
 					</p>
 				</div>
+			</div>
 
-				<div class="filtre3">
-					<p>
-						<div class="icones_filtre">
-						<i class="fas fa-heart"></i>
-					</div>
-					<strong>Romantique</strong>
-					</p>
+			<div class="filtre3">
+				<p>
+					<div class="icones_filtre">
+					<i class="fas fa-heart"></i>
 				</div>
+				<strong>Romantique</strong>
+				</p>
+			</div>
 
-				<div class="filtre4">
-					<p>
-						<div class="icones_filtre">
-						<i class="fas fa-dog"></i>
-					</div>
-					<strong>Animaux autorisés</strong>
-					</p>
-				</div>		
+			<div class="filtre4">
+				<p>
+					<div class="icones_filtre">
+					<i class="fas fa-dog"></i>
+				</div>
+				<strong>Animaux autorisés</strong>
+				</p>
+			</div>		
 		
 		</div>
 
@@ -262,7 +267,7 @@
 
 		</section>
 
-			<h1>Activités à Marseille</h1>
+			<h1 id="grand_titre_activite">Activités à Marseille</h1>
 
 			<div id="activites_a_marseille">
 
@@ -308,7 +313,6 @@
 
 		<div class="pied_de_page">
 			<h2>A propos</h2>
-
 			<ul class="lien_pied_de_page">
 				<li><a href="">Fonctionnement du site</a></li>
 				<li><a href="">Conditions générales de vente</a></li>

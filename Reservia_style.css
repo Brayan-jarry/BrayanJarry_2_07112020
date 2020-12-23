@@ -46,6 +46,12 @@ header
 	height: 6em;
 }
 
+#pack_lien_pricipaux
+{
+	display: flex;
+	flex-direction: row;
+}
+
 .lien_principaux
 {
 	color: black;
@@ -104,6 +110,12 @@ label
 }
 
 #menu_de_recherche
+{
+	display: flex;
+	justify-content: flex-start;
+}
+
+#pack_filtre
 {
 	display: flex;
 	justify-content: flex-start;
@@ -596,12 +608,52 @@ footer
 		flex-wrap: wrap;
 	}
 
-	section
+	
+/*------------en tete--------*/
+
+	header
 	{
-		width: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	#div_logo
+	{
+		position: relative;
+		right: 220px;
+	}
+
+	#logo
+	{
+		font-size: 0.8em;
+	}
+
+	.lien_inscription
+	{
+		position: relative;
+		bottom: 60px;
+		left: 80px;
+	}
+
+	.lien_principaux
+	{
+		border-bottom: 3px solid #F2F2F2;
+	}
+
+	#pack_lien_pricipaux
+	{
+		display: flex;
+		justify-content: space-between;
+		width: 400px;
+		margin-right: -150px;
+	}
+
+	#menu_onglet
+	{
 		display: flex;
 		flex-direction: column-reverse;
-		flex-wrap: wrap;
+		justify-content: flex-end;
 	}
 
 	#menu_de_recherche
@@ -612,15 +664,52 @@ footer
 		justify-content: flex-start;
 	}
 
-	.filtre
+	.filtre1
 	{
+		width: 130px;
+	}
+
+	.filtre2
+	{
+		width: 100px;
+	}
+
+	.filtre3
+	{
+		width: 130px
+	}
+
+	.filtre4
+	{
+		width: 190px;
+	}
+
+	#pack_filtre
+	{
+	display: flex;
+	justify-content: flex-start;
+	margin-top: -20px;
+	}
+
+	#info
+	{
+		margin-top: 20px;
+	}
+
+	/*-----section------*/
+
+	section
+	{
+		width: auto;
 		display: flex;
-		justify-content: flex-start;
+		flex-direction: column-reverse;
+		flex-wrap: wrap;
 	}
 
 	article
 	{
 		background-color: white;
+		margin-left: -20px;
 	}
 
 	.element_article
@@ -629,6 +718,13 @@ footer
 
 	}
 
+	.element_aside
+	{
+		width: 370px;
+	}
+
+	/*-------activite------*/
+
 	#activites_a_marseille
 	{
 		display: flex;
@@ -636,16 +732,54 @@ footer
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
+		height: 1600px;
 	}
 
-	.activites
+	#grand_titre_activite
+	{
+		margin-left: 80px;
+	}
+
+	.activites_g
 	{
 		width: 345px;
+		height: 15%;
+		margin-bottom: 40px;
+		box-shadow: 10px 10px 10px #F2F2F2, -10px -10px 10px #F2F2F2;
+	}
+
+	.activites_p, .activites_p1, .activites_p2
+	{
+		width: 345px;
+		height: 200%;
+		/*margin-bottom: 40px;*/
+		box-shadow: 10px 10px 10px #F2F2F2, -10px -10px 10px #F2F2F2;
 	}
 
 	#photo_activites_1, #photo_activites_2, #photo_activites_3, #photo_activites_4, #photo_activites_5, #photo_activites_6
 	{
 		width: 345px;
-		height: 200px;
+		height: 80%;
 	}
+
+	.pack_activites
+	{
+		height: 30%;
+	}
+
+	/*----pied de page-----*/
+
+	footer
+	{
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		left: 70px;
+	}
+
+	.pied_de_page
+	{
+		margin-left: 50px;
+	}
+
 }
