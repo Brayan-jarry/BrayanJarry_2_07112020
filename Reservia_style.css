@@ -262,32 +262,32 @@ article
 
 #photo_hebergement_1
 {
-	background-image: url("Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+	background-image: url("images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
 }
 
 #photo_hebergement_2
 {
-	background-image:url("Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+	background-image:url("images/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
 }
 
 #photo_hebergement_3
 {
-	background-image:url("Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+	background-image:url("images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg");
 }
 
 #photo_hebergement_4
 {
-	background-image:url("Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+	background-image:url("images/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
 }
 
 #photo_hebergement_5
 {
-	background-image:url("Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+	background-image:url("images/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
 }
 
 #photo_hebergement_6
 {
-	background-image:url("Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+	background-image:url("images/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
 }
 
 #photo_hebergement_1 ,#photo_hebergement_2 ,#photo_hebergement_3 ,#photo_hebergement_4 ,#photo_hebergement_5 ,#photo_hebergement_6
@@ -400,17 +400,17 @@ aside
 
 #photo_aside_1
 {
-	background-image:url('Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
+	background-image:url('images/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
 }
 
 #photo_aside_2
 {
-	background-image:url('Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg');
+	background-image:url('images/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg');
 }
 
 #photo_aside_3
 {
-	background-image:url('Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
+	background-image:url('images/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
 }
 
 #photo_aside_1 ,#photo_aside_2 ,#photo_aside_3
@@ -489,32 +489,32 @@ aside
 
 #photo_activites_1
 {
-	background-image: url("Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+	background-image: url("images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
 }
 
 #photo_activites_2
 {
-	background-image: url("Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+	background-image: url("images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
 }
 
 #photo_activites_3
 {
-	background-image: url("Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+	background-image: url("images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
 }
 
 #photo_activites_4
 {
-	background-image: url("Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+	background-image: url("images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
 }
 
 #photo_activites_5
 {
-	background-image: url("Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+	background-image: url("images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg");
 }
 
 #photo_activites_6
 {
-	background-image: url("Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+	background-image: url("images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
 }
 
 #photo_activites_1, #photo_activites_4
@@ -598,7 +598,7 @@ footer
 
 /*------------------------------------------------------------------------------Media Queries--------------------------------------------------------------------------------------------------*/
 
-@media screen and (max-width : 800px)
+@media (min-width: 320px) and (max-width: 480px)
 {
 
 	main
@@ -635,18 +635,34 @@ footer
 		bottom: 60px;
 		left: 80px;
 	}
-
 	.lien_principaux
 	{
+		display: block;
+		width: 110%;
 		border-bottom: 3px solid #F2F2F2;
+		text-align: center;	
+	}
+
+	.lien_principaux:hover
+	{
+		text-decoration: none;
+		border-color: #0065FC;
 	}
 
 	#pack_lien_pricipaux
 	{
 		display: flex;
 		justify-content: space-between;
-		width: 400px;
-		margin-right: -150px;
+		width: 430px;
+		margin-right: -180px;
+		position: relative;
+		left: 20px;
+
+	}
+
+	.lien_taille
+	{
+		width: 215px;
 	}
 
 	#menu_onglet
@@ -654,6 +670,7 @@ footer
 		display: flex;
 		flex-direction: column-reverse;
 		justify-content: flex-end;
+		width: 430px;
 	}
 
 	#menu_de_recherche
@@ -780,6 +797,25 @@ footer
 	.pied_de_page
 	{
 		margin-left: 50px;
+	}
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) 
+{
+	#main
+	{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	#menu_onglet
+	{
+		position: relative;
+		left: 100px;
 	}
 
 }
