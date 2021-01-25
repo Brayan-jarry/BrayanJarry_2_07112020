@@ -454,12 +454,17 @@ aside
 	padding-left: 1em;
 }
 
-.activites_g , .activites_p
+ .activites_p
 {
 	display: grid;
 	grid-template: 6fr 1fr/1fr;
 }
 
+.activites_g 
+{
+	display: grid;
+	grid-template: 6.5fr 0.5fr/1fr;
+}
 /*--------------------photo activites-----------*/
 
 #photo_activites_1
@@ -651,16 +656,31 @@ footer
 
 	section
 	{
-		width: auto;
-		display: flex;
-		flex-direction: column-reverse;
-		flex-wrap: wrap;
+		display: grid;
+		grid-template: 1fr 2fr /1fr;
 	}
 
 	article
 	{
 		background-color: white;
-		margin-left: -20px;
+		grid-row-start: 2;
+	}
+
+	#article
+	{
+		display: grid;
+		grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr/1fr;
+	}
+
+	aside
+	{
+		grid-row-start: 1;
+	}
+
+	#aside
+	{
+		display: grid;
+		grid-template:1fr 1fr 1fr/1fr;
 	}
 
 	.element_article
