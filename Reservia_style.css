@@ -41,14 +41,14 @@ h2
 	font-size:20px;
 }
 
-/* --------------------------------------------------------------------------------------en tete------------------------------------------------------------------------------------------------*/
+/* #region en tete */
 
 
 header
 { 
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+	display: grid;
+	grid-template-columns: 1fr 50% 0.3fr 0.2fr 0.3fr;
+	grid-gap: 5px;
 }
 
 #logo
@@ -57,20 +57,39 @@ header
 	height: 6em;
 }
 
-#pack_lien_pricipaux
+#lien_1, #lien_2, #lien_3
 {
-	display: flex;
-	flex-direction: row;
+	font-family: Raleway_gras, sans-serif;
+	font-size: 1.3em;
+	margin-top: 2em;
 }
+
+#lien_1
+{
+	grid-column-start: 3;
+}
+
+#lien_2
+{
+	grid-column-start: 4;
+}
+
+#lien_3
+{
+	grid-column-start: 5;
+}
+
 
 .lien_principaux
 {
-	color: black;
+	color: black;	
+	text-decoration: none;
 }
 
 .lien_inscription
 {
 	color: #0065FC;
+	text-decoration: none;
 }
 
 .lien_principaux:hover, .lien_inscription:hover
@@ -177,8 +196,9 @@ label
 	margin-top: -0.2em;
 	font-size: 0.75em;
 }
+/* #endregion */
 
-/* ------------------------------------------------------------------------------------lien de navigation------------------------------------------------------------------------------------ */
+/* #region lien de navigation */
 nav
 {
     width: auto;
@@ -195,19 +215,15 @@ nav li
     margin-right: 15px;
 }
 
-nav a
-{
-    font-size: 1.3em;
-    padding-bottom: 3px;
-    text-decoration: none;
-}
+/*#endregion*/
 
-/*-------------------------------------------------------------------------------------section------------------------------------------------------------------------------------------*/
+/* #region section */
 section
 {
 	display: grid;
-	grid-template: 100%/ 3fr 1fr;
+	grid-template:1fr/ 3fr 1fr;
 	justify-content: flex-start;
+	grid-gap: 15px;
 }
 
 figcaption
@@ -215,7 +231,7 @@ figcaption
 	font-weight: bold;
 }
 
-/*-----------------------------------------------------------------------------------------article--------------------------------------------------------------------------------------------*/
+/* #region article */
 article
 {
 	background-color: #F2F2F2;
@@ -225,7 +241,7 @@ article
 #article
 {
 	display: grid;
-	grid-template: 45% 45% 10% / 1fr 1fr 1fr;
+	grid-template: 1fr 1fr / 1fr 1fr 1fr;
 }
 
 #titre_div_hebergement
@@ -243,7 +259,7 @@ article
 	background-color: white;
 	border-radius: 20px;
 	display: grid;
-	grid-template: 0.2fr 6fr 3fr/2% 96% 2%;
+	grid-template: 5px 6fr 3fr/5px 1fr 5px;
 
 }
 
@@ -309,8 +325,9 @@ article
 	grid-row: 2/3;
 	grid-column: 2/3;
 }
+/* #endregion */
 
-/* ------------------------------------------------------------------------------------notation--------------------------------------------------------------------------------------*/
+/* #region notation */
 form
 {
   display: flex;
@@ -341,13 +358,13 @@ form p
   font-size: 3em;
   cursor: pointer;
 }
+/* #endregion */
 
-/*------------------------------------------------------------------------------------aside-----------------------------------------------------------------------------------------------------*/
+/* #region aside */
 aside
 {
 	background-color: #F2F2F2;
 	border-radius: 15px;
-	margin-left: 2em;
 }
 
 #aside
@@ -377,7 +394,7 @@ aside
 .element_aside
 {
 	display: grid;
-	grid-template: 2% 96% 2%/2% 48% 48% 2%;
+	grid-template:  5px 1fr 5px/5px 1fr 1fr 5px;
 	background-color: white;
 	border-radius: 20px;
 }
@@ -420,8 +437,11 @@ aside
 	grid-column-start: 2;
 
 }
+/* #endregion */
 
-/*------------------------------------------------------------------------------------activités-----------------------------------------------------------------------------------*/
+/* #endregion */
+
+/* #region activités */
 
 #activites_a_marseille
 {
@@ -433,7 +453,7 @@ aside
 {
 	border-radius: 20px;
 	box-shadow: 6px 6px 10px #F2F2F2;
-	margin-right: -10px;
+	margin-left: 0;
 }
 
 .pack_activites_1
@@ -507,8 +527,9 @@ aside
 	background-size: cover;
 	background-clip: content-box;
 }
+/* #endregion */
 
-/*---------------------------------------------------------------------------------pied de page------------------------------------------------------------------------------------------*/
+/* #region pied de page */
 
 footer
 {
@@ -534,9 +555,12 @@ footer
 	text-decoration: none;
 	color: black;
 }
+/*#endregion**/
 
-/*------------------------------------------------------------------------------Media Queries--------------------------------------------------------------------------------------------------*/
 
+/* #region Media Queries */
+
+/* #region mobile */
 @media (min-width: 320px) and (max-width: 480px)
 {
 
@@ -552,15 +576,8 @@ footer
 
 	header
 	{
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-	}
-
-	#div_logo
-	{
-		position: relative;
-		right: 220px;
+		display: grid;
+		grid-template: 1fr 1fr/1fr 1fr;
 	}
 
 	#logo
@@ -568,16 +585,30 @@ footer
 		font-size: 0.8em;
 	}
 
-	.lien_inscription
+	#lien_1
 	{
-		position: relative;
-		bottom: 60px;
-		left: 80px;
+		grid-column-start: 1;
+		grid-row-start: 2;
+		padding-left: 1.5em;
 	}
+
+	#lien_2
+	{
+		grid-column-start: 2;
+		grid-row-start: 2;
+		padding-left: 1.5em;
+	}
+
+	#lien_3
+	{
+		grid-column-start: 2;
+		grid-row-start: 1;
+		padding-left: 4em;
+	}
+
 	.lien_principaux
 	{
 		display: block;
-		width: 110%;
 		border-bottom: 3px solid #F2F2F2;
 		text-align: center;	
 	}
@@ -591,11 +622,6 @@ footer
 	#pack_lien_pricipaux
 	{
 		display: flex;
-		justify-content: space-between;
-		width: 430px;
-		margin-right: -180px;
-		position: relative;
-		left: 20px;
 
 	}
 
@@ -609,7 +635,6 @@ footer
 		display: flex;
 		flex-direction: column-reverse;
 		justify-content: flex-end;
-		width: 430px;
 	}
 
 	#menu_de_recherche
@@ -652,35 +677,23 @@ footer
 		margin-top: 20px;
 	}
 
-	/*-----section------*/
+	/*----------------------------------- section ----------------------------------*/
 
 	section
 	{
-		display: grid;
-		grid-template: 1fr 2fr /1fr;
+		display: flex;
+		flex-direction: column-reverse;
 	}
 
 	article
 	{
 		background-color: white;
-		grid-row-start: 2;
 	}
 
 	#article
 	{
-		display: grid;
-		grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr/1fr;
-	}
-
-	aside
-	{
-		grid-row-start: 1;
-	}
-
-	#aside
-	{
-		display: grid;
-		grid-template:1fr 1fr 1fr/1fr;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.element_article
@@ -688,54 +701,18 @@ footer
 		box-shadow: 10px 10px 10px #F2F2F2, -10px -10px 10px #F2F2F2;
 
 	}
-
-	.element_aside
-	{
-		width: 370px;
-	}
-
 	/*-------activite------*/
 
 	#activites_a_marseille
 	{
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-		height: 1600px;
+		display: grid;
+		grid-template: 1fr 2fr 1fr 2fr /1fr
 	}
 
-	#grand_titre_activite
+	#pack_activites_1
 	{
-		margin-left: 80px;
-	}
-
-	.activites_g
-	{
-		width: 345px;
-		height: 15%;
-		margin-bottom: 40px;
-		box-shadow: 10px 10px 10px #F2F2F2, -10px -10px 10px #F2F2F2;
-	}
-
-	.activites_p, .activites_p1, .activites_p2
-	{
-		width: 345px;
-		height: 200%;
-		/*margin-bottom: 40px;*/
-		box-shadow: 10px 10px 10px #F2F2F2, -10px -10px 10px #F2F2F2;
-	}
-
-	#photo_activites_1, #photo_activites_2, #photo_activites_3, #photo_activites_4, #photo_activites_5, #photo_activites_6
-	{
-		width: 345px;
-		height: 80%;
-	}
-
-	.pack_activites
-	{
-		height: 30%;
+		display: grid;
+		grid-template: 50% 50% /1fr;
 	}
 
 	/*----pied de page-----*/
@@ -744,32 +721,26 @@ footer
 	{
 		display: flex;
 		flex-direction: column;
-		position: relative;
-		left: 70px;
 	}
 
-	.pied_de_page
+	#pied_de_page
 	{
-		margin-left: 50px;
+		margin-left: 0;
 	}
 
 }
+/*#endregion*/
 
-
-
+/* #region tablette */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) 
 {
-	#main
+	#menu_de_recherche
 	{
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-	}
-
-	#menu_onglet
-	{
-		position: relative;
-		left: 100px;
+		display: grid;
+		grid-template: 1fr 1fr/ 1fr 1fr 1fr;
 	}
 
 }
+/*#endregion*/
+  
+/*#endregion*/

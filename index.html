@@ -7,28 +7,25 @@
         <script src="https://kit.fontawesome.com/846d602d7a.js" crossorigin="anonymous"></script>
         <title>Reservia</title>
 	</head>
+
+	<!--#region body-->
 <body>
 
+<!-- #region en tête-->
 	<header> 
 
 		<div id="div_logo">
 			<img src="images/logo/Reservia@3x.png" alt="Logo Reservia" id="logo"/>
 		</div>
 
-		<div id="menu_onglet">
-			<nav>
-				<ul>
-					<div id="pack_lien_pricipaux">
-						<div class="lien_taille"><li><a href="#titre_div_hebergement" class="lien_principaux">Hebergement</a></li></div>
-						<div class="lien_taille"><li><a href="#activites_a_marseille" class="lien_principaux">Activités</a></li></div> 
-					</div>
-					<li><a href="" class="lien_inscription"><strong>S'inscrire</strong></a></li>
-				</ul>
-			</nav>
-		</div>	
+		<div id="lien_1"><a href="#titre_div_hebergement" class="lien_principaux">Hebergement</a></div>
+		<div id="lien_2"><a href="#activites_a_marseille" class="lien_principaux">Activités</a></div> 
+		<div id="lien_3"><a href="" class="lien_inscription"><strong>S'inscrire</strong></a></div>
 
 	</header>
+<!-- #endregion -->
 
+<!-- #region main-->
 	<main>
 	
 		<h1>Trouver votre hébergement pour des vaccances de rêve</h1>
@@ -40,9 +37,9 @@
 			</div>
 			<input type="text" name="recherche" placeholder="Marseille, France" id="zone_recherche" /><label>Rechercher</label>
 		</div>
-
-		<div id="menu_de_recherche">
 		
+		<div id="menu_de_recherche">
+
 			<h3>Filtres</h3>
 
 			<div id="pack_filtre">
@@ -94,8 +91,10 @@
 			</p>
 		</div>
 
+		<!-- #region section-->
 		<section>
 
+			<!-- #region article-->
 			<article>
 
 				<h2 id="titre_div_hebergement">Hébergements à Marseille</h2>
@@ -192,12 +191,14 @@
 						</div>
 					</figure>
 
-				<h3 id="Afficher_plus">Afficher plus</h3>
-
 				</div>
 
-			</article>
+				<h3 id="Afficher_plus">Afficher plus</h3>
 
+			</article>
+			<!-- #endregion -->
+
+			<!-- #region aside-->
 			<aside>
 
 				<div id="titre_et_icone_aside">
@@ -255,9 +256,12 @@
 				</div>
 
 			</aside>	
+			<!-- #endregion -->
 
 		</section>
+		<!-- #endregion -->
 
+		<!-- #region activites-->
 		<h2 id="grand_titre_activite">Activités à Marseille</h2>
 
 		<div id="activites_a_marseille">
@@ -297,9 +301,12 @@
 			</div>
 
 		</div>
+		<!-- #endregion -->
 
 	</main>
+	<!-- #endregion -->
 
+	<!-- #region pied de page-->
 	<footer>
 
 		<div class="pied_de_page">
@@ -328,7 +335,9 @@
 		</div>
 
 	</footer>
+	<!-- #endregion -->
 
 </body>
+<!-- #endregion -->
 
 </html>
