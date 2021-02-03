@@ -1,23 +1,23 @@
 @font-face
 {
 	    font-family: 'Raleway';
-	src: url('Raleway/static/Raleway-Regular.ttf');
-	src: url('assets/fonts/Raleway-Regular.eot') format('eot'),
-	url('assets/fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
-	url('assets/fonts/Raleway-Regular.woff2') format('woff2'),
-	url('assets/fonts/Raleway-Regular.woff') format('woff'),
-	url('assets/fonts/Raleway-Regular.svg#Raleway-Regular') format('svg');
+	src: url('../Raleway/static/Raleway-Regular.ttf');
+	src: url('../Raleway/static/Raleway-Regular.eot') format('eot'),
+	url('../Raleway/static/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../Raleway/static/Raleway-Regular.woff2') format('woff2'),
+	url('../Raleway/static/Raleway-Regular.woff') format('woff'),
+	url('../Raleway/static/Raleway-Regular.svg#Raleway-Regular') format('svg');
 }
 
 @font-face
 {
 	    font-family: 'Raleway_gras';
-	src: url('Raleway/static/Raleway-Bold.ttf');
-	src: url('assets/fonts/Raleway-Bold.eot') format('eot'),
-	url('assets/fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
-	url('assets/fonts/Raleway-Bold.woff2') format('woff2'),
-	url('assets/fonts/Raleway-Bold.woff') format('woff'),
-	url('assets/fonts/Raleway-Bold.svg#Raleway-Bold') format('svg');
+	src: url('../Raleway/static/Raleway-Bold.ttf');
+	src: url('../Raleway/static/Raleway-Bold.eot') format('eot'),
+	url('../Raleway/static/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../Raleway/static/Raleway-Bold.woff2') format('woff2'),
+	url('../Raleway/static/Raleway-Bold.woff') format('woff'),
+	url('../Raleway/static/Raleway-Bold.svg#Raleway-Bold') format('svg');
 	
 }
 
@@ -39,6 +39,12 @@ h1
 h2
 {
 	font-size:20px;
+}
+
+.carte
+{
+	text-decoration: none;
+	color: black;
 }
 
 /* #region en tete */
@@ -143,20 +149,15 @@ label
 {
 	display: flex;
 	justify-content: flex-start;
-}
-
-#pack_filtre
-{
-	display: flex;
-	justify-content: flex-start;
+	flex: wrap;
 }
 
 .filtre1, .filtre2, .filtre3, .filtre4
 {
-	margin-left: 50px;
+	margin-left: 2em;
 	display: flex;
 	justify-content: flex-start;
-	margin-top: 1.2em;
+	margin-top: 1em;
 	border:3px solid #F2F2F2;
 	border-radius: 20px;
 	height: 1.45em;
@@ -285,32 +286,32 @@ article
 
 #photo_hebergement_1
 {
-	background-image: url("images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+	background-image: url("../images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
 }
 
 #photo_hebergement_2
 {
-	background-image:url("images/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+	background-image:url("../images/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
 }
 
 #photo_hebergement_3
 {
-	background-image:url("images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+	background-image:url("../images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg");
 }
 
 #photo_hebergement_4
 {
-	background-image:url("images/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+	background-image:url("../images/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
 }
 
 #photo_hebergement_5
 {
-	background-image:url("images/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+	background-image:url("../images/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
 }
 
 #photo_hebergement_6
 {
-	background-image:url("images/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+	background-image:url("../images/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
 }
 
 #photo_hebergement_1 ,#photo_hebergement_2 ,#photo_hebergement_3 ,#photo_hebergement_4 ,#photo_hebergement_5 ,#photo_hebergement_6
@@ -411,17 +412,17 @@ aside
 
 #photo_aside_1
 {
-	background-image:url('images/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
+	background-image:url('../images/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
 }
 
 #photo_aside_2
 {
-	background-image:url('images/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg');
+	background-image:url('../images/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg');
 }
 
 #photo_aside_3
 {
-	background-image:url('images/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
+	background-image:url('../images/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
 }
 
 #photo_aside_1 ,#photo_aside_2 ,#photo_aside_3
@@ -489,32 +490,32 @@ aside
 
 #photo_activites_1
 {
-	background-image: url("images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+	background-image: url("../images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
 }
 
 #photo_activites_2
 {
-	background-image: url("images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+	background-image: url("../images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
 }
 
 #photo_activites_3
 {
-	background-image: url("images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+	background-image: url("../images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
 }
 
 #photo_activites_4
 {
-	background-image: url("images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+	background-image: url("../images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
 }
 
 #photo_activites_5
 {
-	background-image: url("images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+	background-image: url("../images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg");
 }
 
 #photo_activites_6
 {
-	background-image: url("images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+	background-image: url("../images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
 }
 
 #photo_activites_1, #photo_activites_2, #photo_activites_3, #photo_activites_4, #photo_activites_5, #photo_activites_6
@@ -559,6 +560,32 @@ footer
 
 
 /* #region Media Queries */
+
+/* #region tablette */
+@media screen and (max-width: 1024px) 
+{
+	header
+	{
+		display: grid;
+		grid-template-columns: 1fr 0.3fr 0.1fr 0.3fr;
+		grid-gap: 10px;
+	}
+
+
+	section
+	{
+		display: grid;
+		grid-template:1fr 0.7fr/1fr ;
+	}
+
+	#activites_a_marseille
+	{
+		display: grid;
+		grid-template: 1fr 1fr /1fr 1fr;
+	}
+
+}
+/*#endregion*/
 
 /* #region mobile */
 @media (min-width: 320px) and (max-width: 480px)
@@ -665,13 +692,6 @@ footer
 		width: 190px;
 	}
 
-	#pack_filtre
-	{
-	display: flex;
-	justify-content: flex-start;
-	margin-top: -20px;
-	}
-
 	#info
 	{
 		margin-top: 20px;
@@ -731,16 +751,4 @@ footer
 }
 /*#endregion*/
 
-/* #region tablette */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) 
-{
-	#menu_de_recherche
-	{
-		display: grid;
-		grid-template: 1fr 1fr/ 1fr 1fr 1fr;
-	}
-
-}
-/*#endregion*/
-  
 /*#endregion*/
