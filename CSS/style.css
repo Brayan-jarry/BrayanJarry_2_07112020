@@ -571,7 +571,39 @@ footer
 		grid-gap: 10px;
 	}
 
+	#menu_de_recherche
+	{
+		margin-bottom: 1em;
+		margin-top: 1em;
+	}
 
+	.filtre1, .filtre2, .filtre3, .filtre4
+	{
+		margin-left: 1.5em;
+		display: flex;
+		justify-content: flex-start;
+		margin-top: 0;
+		border:3px solid #F2F2F2;
+		border-radius: 20px;
+		height: auto;
+		padding-right: 1em;
+	}
+
+	.tf
+	{
+		padding-top: 0.7em;
+	}
+
+	.tf2
+	{
+		padding-top: 0.4em;
+	}
+
+	.icones_filtre
+	{
+	height: auto;
+	}
+	
 	section
 	{
 		display: grid;
@@ -630,7 +662,7 @@ footer
 	{
 		grid-column-start: 2;
 		grid-row-start: 1;
-		padding-left: 4em;
+		padding-left: 3em;
 	}
 
 	.lien_principaux
@@ -670,6 +702,23 @@ footer
 		flex-direction: column;
 		flex-wrap: wrap;
 		justify-content: flex-start;
+	}
+	.filtre1, .filtre2, .filtre3, .filtre4
+	{
+	margin-left: 2em;
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 1em;
+	border:3px solid #F2F2F2;
+	border-radius: 20px;
+	height: 1.45em;
+	padding-top: 0.2em;
+	padding-right: 1em;
+	}
+
+	.tf, .tf2
+	{
+		padding-top: 0;
 	}
 
 	.filtre1
