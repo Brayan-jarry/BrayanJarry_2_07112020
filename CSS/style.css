@@ -261,6 +261,9 @@ article
 	border-radius: 20px;
 	display: grid;
 	grid-template: 5px 6fr 3fr/5px 1fr 5px;
+	text-decoration: none;
+	margin: 1.5rem;
+	color: black;
 
 }
 
@@ -398,6 +401,9 @@ aside
 	grid-template:  5px 1fr 5px/5px 1fr 1fr 5px;
 	background-color: white;
 	border-radius: 20px;
+	margin: 1.5rem;
+	text-decoration: none;
+	color: black;
 }
 
 .titre_prix_note_aside
@@ -454,7 +460,9 @@ aside
 {
 	border-radius: 20px;
 	box-shadow: 6px 6px 10px #F2F2F2;
-	margin-left: 0;
+	margin: 1.5rem;
+	text-decoration: none;
+	color: black;
 }
 
 .pack_activites_1
