@@ -26,7 +26,7 @@ body
 {
 	font-family: Raleway, sans-serif;
 }
-h1, h2, figcaption, strong
+h1, h2, h4, strong
 {
 	font-family: Raleway_gras, sans-serif;
 }
@@ -39,6 +39,12 @@ h1
 h2
 {
 	font-size:20px;
+}
+
+h4
+{
+margin: 0;
+padding: 0;
 }
 
 .carte
@@ -227,7 +233,7 @@ section
 	grid-gap: 15px;
 }
 
-figcaption
+h4
 {
 	font-weight: bold;
 }
