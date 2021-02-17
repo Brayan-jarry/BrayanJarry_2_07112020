@@ -155,7 +155,6 @@ label
 {
 	display: flex;
 	justify-content: flex-start;
-	flex: wrap;
 }
 
 .filtre1, .filtre2, .filtre3, .filtre4
@@ -169,6 +168,12 @@ label
 	height: 1.45em;
 	padding-top: 0.2em;
 	padding-right: 1em;
+}
+
+.txt_filtre
+{
+	display: flex;
+	margin-top: 0;
 }
 
 .icones_filtre, .icones_info
@@ -189,6 +194,11 @@ label
 	background-color: #DEEBFF;
 	margin-top: -0.3em;
 	margin-left: -0.2em;
+}
+
+.txt_info
+{
+	display: flex;
 }
 
 .icones_info
@@ -238,8 +248,8 @@ h4
 	font-weight: bold;
 }
 
-/* #region article */
-article
+/* #region #article */
+#hebergement
 {
 	background-color: #F2F2F2;
 	border-radius: 20px;
@@ -288,7 +298,7 @@ article
 
 .note_hebergement
 {
-	margin-top: -30px;
+	margin-bottom: 1.5em;
 }
 
 /*-----------------------photo hebergement------------------*/
@@ -338,36 +348,17 @@ article
 /* #endregion */
 
 /* #region notation */
-form
-{
-  display: flex;
-}
 
-.etoile
-{
-  display: none;
-}
-
-.etoile_b, .etoile_g
-{
-	font-size: 20px;
-}
-
-.etoile_b
+.blue
 {
 	color: #0065FC;
 }
 
-.etoile_g
+.grey
 {
-	color: #F2F2F2;
+	color:  #F2F2F2;
 }
 
-form p
-{
-  font-size: 3em;
-  cursor: pointer;
-}
 /* #endregion */
 
 /* #region aside */
@@ -410,6 +401,7 @@ aside
 	margin: 1.5rem;
 	text-decoration: none;
 	color: black;
+	height: 12em;
 }
 
 .titre_prix_note_aside
@@ -617,6 +609,11 @@ footer
 	{
 	height: auto;
 	}
+
+	.txt_filtre
+	{
+		margin: 0;
+	}
 	
 	section
 	{
@@ -755,6 +752,11 @@ footer
 		width: 190px;
 	}
 
+	.icones_filtre
+	{
+	height: 30px;
+	}
+
 	#info
 	{
 		margin-top: 20px;
@@ -768,7 +770,7 @@ footer
 		flex-direction: column-reverse;
 	}
 
-	article
+	#hebergement
 	{
 		background-color: white;
 	}

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="CSS/style.css" />
-        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/846d602d7a.js" crossorigin="anonymous"></script>
         <title>Reservia</title>
 	</head>
@@ -43,37 +43,37 @@
 			<h3>Filtres</h3>
 
 			<div class="filtre1">
-				<p>
-					<div class="icones_filtre">
+				<p class="txt_filtre">
+					<span class="icones_filtre">
 					<i class="fas fa-money-bill-wave-alt"></i>
-					</div>
+					</span>
 					<strong class="tf">Economique</strong>
 				</p>	
 			</div>
 
 			<div class="filtre2">
-				<p>
-					<div class="icones_filtre">
+				<p class="txt_filtre">
+					<span class="icones_filtre">
 					<i class="fas fa-child"></i>
-					</div>
+					</span>
 					<strong class="tf">Familial</strong>
 				</p>
 			</div>
 
 			<div class="filtre3">
-				<p>
-					<div class="icones_filtre">
+				<p class="txt_filtre">
+					<span class="icones_filtre">
 					<i class="fas fa-heart"></i>
-					</div>
+					</span>
 					<strong class="tf">Romantique</strong>
 				</p>
 			</div>
 
 			<div class="filtre4">
-				<p>
-					<div class="icones_filtre">
+				<p class="txt_filtre">
+					<span class="icones_filtre">
 					<i class="fas fa-dog"></i>
-					</div>
+					</span>
 					<strong class="tf2">Animaux autorisés</strong>
 				</p>
 			</div>		
@@ -81,10 +81,10 @@
 		</div>
 
 		<div id="info">
-			<p>
-				<div class="icones_info">
+			<p class="txt_info">
+				<span class="icones_info">
 					<i class="fas fa-info"></i>
-				</div>
+				</span>
 				Plus que 500 logements sont disponibles dans cette ville
 			</p>
 		</div>
@@ -93,7 +93,7 @@
 		<section>
 
 			<!-- #region article-->
-			<article>
+			<div id="hebergement">
 
 				<h2 id="titre_div_hebergement">Hébergements à Marseille</h2>
 
@@ -104,13 +104,13 @@
 							<div class="titre_prix_note_hebergement">
 								<h4>Auberge la Cannebière</h4>
 								<p class="prix_hebergement">Nuit à partir de <strong>25€</strong></p>
-								<form method="post" action="#" class="note_hebergement">
-									<input type="radio" name="note" class="etoile" checked> <p class="etoile_b">★</p></input>
-									<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-									<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-									<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-									<input type="radio" name="note" class="etoile"> <p class="etoile_g">★</p> </input>
-								</form>
+								<div class="note_hebergement">
+									<i class="fas fa-star blue"></i>
+									<i class="fas fa-star blue"></i>
+									<i class="fas fa-star blue"></i>
+									<i class="fas fa-star blue"></i>
+									<i class="fas fa-star grey"></i>
+								</div>
 							</div>
 					</a>
 
@@ -119,13 +119,13 @@
 						<div class="titre_prix_note_hebergement">
 							<h4>Hôtel du port</h4>
 							<p class="prix_hebergement">Nuit à partir de 52<strong>€</strong></p>
-							<form method="post" action="#" class="note_hebergement">
-								<input type="radio" name="note" class="etoile" checked> <p class="etoile_b">★</p></input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-							</form>
+							<div class="note_hebergement">
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star blue"></i>
+							</div>
 						</div>
 					</a>
 
@@ -134,13 +134,13 @@
 						<div class="titre_prix_note_hebergement">
 							<h4>Hôtel les mouettes</h4>
 							<p class="prix_hebergement">Nuit à partir de 76<strong>€</strong></p>
-							<form method="post" action="#" class="note_hebergement">
-								<input type="radio" name="note" class="etoile" checked> <p class="etoile_b">★</p></input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_g">★</p> </input>
-							</form>
+							<div class="note_hebergement">
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star grey"></i>
+							</div>
 						</div>
 					</a>
 
@@ -149,13 +149,13 @@
 						<div class="titre_prix_note_hebergement">
 							<h4>Hôtel de la mer</h4>
 							<p class="prix_hebergement">Nuit à partir de 46<strong>€</strong></p>
-							<form method="post" action="#" class="note_hebergement">
-								<input type="radio" name="note" class="etoile" checked> <p class="etoile_b">★</p></input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_g">★</p> </input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_g">★</p> </input>
-							</form>
+							<div class="note_hebergement">
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star grey"></i>
+								<i class="fas fa-star grey"></i>
+							</div>
 						</div>
 					</a>
 
@@ -164,13 +164,13 @@
 						<div class="titre_prix_note_hebergement">
 							<h4>Auberge le panier</h4>
 							<p class="prix_hebergement">Nuit à partir de <strong>23€</strong></p>
-							<form method="post" action="#" class="note_hebergement">
-								<input type="radio" name="note" class="etoile" checked> <p class="etoile_b">★</p></input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-							</form>
+							<div class="note_hebergement">
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star grey"></i>
+							</div>
 						</div>
 					</a>
 		
@@ -179,20 +179,20 @@
 						<div class="titre_prix_note_hebergement">
 							<h4>Hôtel chez Amina</h4>
 							<p class="prix_hebergement">Nuit à partir de 96<strong>€</strong></p>
-							<form method="post" action="#" class="note_hebergement">
-								<input type="radio" name="note" class="etoile" checked> <p class="etoile_b">★</p></input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_g">★</p> </input>
-							</form>
+							<div class="note_hebergement">
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star blue"></i>
+							</div>
 						</div>
 					</a>
 				</div>
 
 				<h3 id="Afficher_plus">Afficher plus</h3>
 
-			</article>
+			</div>
 			<!-- #endregion -->
 
 			<!-- #region aside-->
@@ -210,13 +210,13 @@
 						<div class="titre_prix_note_aside">
 							<h4>Hôtel le soleil du matin</h4>
 							<p>Nuit à partir de 128<strong>€</strong></p>
-							<form method="post" action="#">
-								<input type="radio" name="note" class="etoile" checked> <p class="etoile_b">★</p></input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-							</form>
+							<div class="note_hebergement">
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star blue"></i>
+							</div>
 						</div>
 					</a>
 
@@ -225,13 +225,13 @@
 						<div class="titre_prix_note_aside">
 							<h4>Au coeur de l'eau chambres d'hôtes</h4>
 							<p>Nuit à partir de 71<strong>€</strong></p>
-							<form method="post" action="#">
-								<input type="radio" name="note" class="etoile" checked> <p class="etoile_b">★</p></input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_g">★</p> </input>
-							</form>
+							<div class="note_hebergement">
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star grey"></i>
+							</div>
 						</div>
 					</a>
 
@@ -240,13 +240,13 @@
 						<div class="titre_prix_note_aside">
 							<h4>Hôtel tout bleu et Blanc</h4>
 							<p>Nuit à partir de 68<strong>€</strong></p>
-							<form method="post" action="#">
-								<input type="radio" name="note" class="etoile" checked> <p class="etoile_b">★</p></input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-								<input type="radio" name="note" class="etoile"> <p class="etoile_b">★</p> </input>
-							</form>
+							<div class="note_hebergement">
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star blue"></i>
+								<i class="fas fa-star grey"></i>
+							</div>
 						</div>
 					</a>
 
